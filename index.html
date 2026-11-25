@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#ffe4ef" />
+  <title>Mi Amor ♡ | For J</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <script src="game.js" defer></script>
+</head>
+<body>
+  <main class="screen">
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+    <header class="topbar"><span>♡ MI AMOR</span><span>PRIVATE ACCESS</span></header>
+    <section class="welcome" aria-labelledby="heading">
+      <div class="heart-mark" aria-hidden="true">♡</div>
+      <p class="eyebrow">A LITTLE SOMETHING FOR YOU</p>
+      <h1 id="heading">Hello, my beybiku.</h1>
+      <p class="subheading">A little secret, just between us.</p>
+      <div class="lock-card" id="lockCard">
+        <div class="lock-icon" aria-hidden="true">🔫</div>
+        <h2>mueheheheh</h2>
+        <p class="hint">Hint: kung mahal mo talaga ako, alam mona dapat first try. 😒</p>
+        <div class="pin-dots" role="group" aria-label="Four-digit PIN progress">
+          <span class="pin-dot" aria-hidden="true">·</span><span class="pin-dot" aria-hidden="true">·</span><span class="pin-dot" aria-hidden="true">·</span><span class="pin-dot" aria-hidden="true">·</span>
+        </div>
+        <div class="keypad" aria-label="PIN keypad">
+          <button type="button" data-digit="1">1</button><button type="button" data-digit="2">2</button><button type="button" data-digit="3">3</button>
+          <button type="button" data-digit="4">4</button><button type="button" data-digit="5">5</button><button type="button" data-digit="6">6</button>
+          <button type="button" data-digit="7">7</button><button type="button" data-digit="8">8</button><button type="button" data-digit="9">9</button>
+          <span class="keypad-decoration" aria-hidden="true">♡</span><button type="button" data-digit="0">0</button><button type="button" id="backspace" aria-label="Delete last digit">⌫</button>
+        </div>
+        <button type="button" class="unlock" id="unlock" disabled>TAMA BA TALAGA?</button>
+        <p class="feedback" id="feedback" aria-live="polite"></p>
+      </div>
+    </section>
+    <footer>Made with lust, for kwan ♡ <span>·</span> 11.26.2026</footer>
+    <section class="success-screen" id="successScreen" hidden aria-live="polite">
+      <div class="success-inner">
+        <div class="success-heart" aria-hidden="true">🎆</div>
+        <p class="eyebrow">YOU FOUND THE KEY</p>
+        <h2>Welcome, mi amor. ♡</h2>
+        <p>PUTUKAN NAAAAAAA</p>
+        <button class="unlock start-adventure" id="enterArena" type="button">START NOW</button>
+      </div>
+    </section>
+    <section class="game-screen" id="gameScreen" hidden>
+      <div class="game-header"><strong>MI AMOR ♡ <span>LOVE SHOT</span></strong><div>🐽 POSO <b id="scoreValue">0</b> / 26</div></div>
+      <div class="game-viewport"><canvas id="arena"></canvas><div class="crosshair" id="crosshair">+</div>
+        <div class="game-overlay" id="gameOverlay"><h2 id="overlayTitle">Ready, mi amor? ♡</h2><p id="overlayText">WASD to move · Mouse to aim · Click to shoot hearts. Press Esc to pause.</p><button class="unlock" id="gameAction">Start shooting ♡</button></div>
+      </div><p class="game-help">Laptop recommended · Click the arena to capture your mouse · Esc releases it</p>
+    </section>
+    <section class="gift-screen" id="giftScreen" hidden><div class="gift-card" id="giftIntro"><p class="eyebrow">MISSION COMPLETE</p><h2>Beautifully played, my love. ♡</h2><p>You scored <strong id="finalScore">0</strong> points. But you've had my heart all along.</p><button class="unlock" id="openGift">Open your surprise ♡</button><button class="text-button" id="replayGame">Play again</button></div><div class="gift-card" id="bouquetReveal" hidden><p class="eyebrow">✨✨💖💛💚💙💜🤍✨✨</p><div class="css-bouquet" aria-hidden="true"><span>🌷</span><span>🌷</span><span>🌷</span><span>🌷</span><span>🌷</span></div><h2>Happy 20 months, mi amor. ♡</h2><p>pasinsya na vibe coder pa nagostohan mong eaklal</p><p class="letter-placeholder">A little something for the girl who makes my world brighter. ♡</p><p class="letter-note">Happy bententh sa'tin beybiku, sasabihin ko pa rin 'yung isa palagi kong sinasabi na sana magtagal tayo hanggang puntod natin kahit kung anong mangyari sa kwento nating mahirap hulaan kung anong mangyayari sa susunod and ill just make this short kasi palagi ko naman sinasabe gusto ko kahit minsan pabulong muehehehe and sana magbago pa ako dahil lahat ng tao ay nagbabago talaga kahit meron o wala tayong gawin sa sarili natin or sa paligid natin is may something talagang magbabago parang ikaw lang baby kaya palagi kitang inaaral sa mahal kita kaya aaralin pa kita hanggang buhay pa'ko at kayang tirahin kita *slurp. 'Di ko naman alam sinabe ko kanina kasi tinatype ko lang kung ano maisip ko basta tandaan mo lang, at the end of the day kahit kinabukasan na'ko palaging natutulog is bago ako pumikit is titinda kita with my loveable eyes kasi kaya kitang mahalin kahit maging hotdog kapa. i love you baby and wowowowowow to our bententh.</p></div></section>
+  </main>
+</body>
+</html>
